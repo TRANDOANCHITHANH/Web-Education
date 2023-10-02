@@ -56,7 +56,7 @@ h2 {
 	font-size: 36px;
 }
 h3 {
-	font-size: 28px;
+	font-size: 30px;
 }
 h4 {
 	font-size: 22px;
@@ -142,8 +142,8 @@ p {
     bottom: 0;
     left: 0;
 }
-.section-title h2{
-    font-size: 48px;
+.section-title h3{
+    font-size: 30px;
     color: #000;
     padding-top: 10px;
 }
@@ -568,7 +568,7 @@ p {
     z-index: 5;
 }
 #event .section-title h5,
-#event .section-title h2{
+#event .section-title h3{
     color: #fff;
 }
 #event .section-title h5::before{
@@ -782,82 +782,6 @@ p {
 }
 .footer-link ul li a:hover i{
     margin-right: 15px;
-}
-
-
-/*=====================================================
-    19. COUNT DOWN css 
-======================================================*/
-
-.count-down-cont{
-    position: relative;
-    z-index: 5;
-}
-.count-down-cont h3{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 500;
-    padding-bottom: 5px;
-}
-.count-down-cont h2{
-    font-size: 72px;
-    color: #ffc600;
-    font-weight: 700;
-    padding-bottom: 37px;
-}
-
-.count-down-time{
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    
-}
-.count-down-time .singel-count{
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    width: 25%;
-}
-.count-down-time .singel-count .number{
-    font-size: 72px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    display: block;
-}
-.count-down-time .singel-count .title{
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    display: block;
-}
-
-.category-form-3{
-    margin-top: 0;
-    position: relative;
-    z-index: 5;
-}
-.category-form-3 .form-title {
-	background-color: #ffc600;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.category-form-3 .form-title h3 {
-	color: #07294d;
-}
-.category-form-3 .form-title span {
-    font-weight: 600;
-}
-.category-form-3 .main-btn{
-    color: #fff;
-}
-.category-form-3 .main-btn:hover{
-    color: #ffc600;
-    border-color: #07294d;
 }
 
 
