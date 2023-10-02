@@ -1,0 +1,1140 @@
+
+/*===========================
+    1. Theme default css 
+===========================*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');
+
+ body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover{
+	text-decoration: none;
+}
+
+i,
+span,
+a{
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #1d2025;
+	margin: 0px;
+}
+
+h1 {
+	font-weight: 500;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul,ol {
+	margin: 0px;
+	padding: 0px;
+    list-style-type: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #505050;
+	margin: 0px;
+}
+
+.bg_cover{
+    background-position:0cm;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/*===== All Button Style =====*/
+
+.main-btn {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #ffc600;
+	padding: 0 35px;
+	font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+	line-height: 50px;
+	border-radius: 5px;
+    color: #07294d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #ffc600;
+}
+.main-btn:hover{
+    color: #ffc600;
+    border-color: #07294d;
+    background-color: #07294d;
+}
+
+
+
+/*===== All Section Title Style =====*/
+
+.section-title{}
+.section-title h5{
+    color: #07294d;
+    position: relative;
+    padding-bottom: 12px;
+}
+.section-title h5::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #ffc600;
+    bottom: 0;
+    left: 0;
+}
+.section-title h2{
+    font-size: 48px;
+    color: #000;
+    padding-top: 10px;
+}
+
+/*=====================================================
+    2. HEADER css 
+======================================================*/
+
+
+/*===== Header top =====*/
+
+.header-top{
+    background-color: #07294d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-contact{}
+.header-contact ul{}
+.header-contact ul li{
+    display: inline-block;
+    margin-right: 45px;
+}
+.header-contact ul li:last-child{
+    margin-right: 0;
+}
+
+.header-contact ul li img{}
+.header-contact ul li span {
+	color: #dee2e6;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+
+.header-opening-time{}
+.header-opening-time p {
+	color: #dee2e6;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*===== Header Logo support =====*/
+
+.header-logo-support{
+    border-bottom: 1px solid #cecece;
+}
+
+.support-button{}
+.support-button .support {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin-top: 7px;
+}
+.support-button .support .icon{}
+.support-button .support .cont{
+    margin-left: 15px;
+    margin-top: -2px;
+}
+.support-button .support .cont p{
+    font-size: 13px;
+    color: #8a8a8a;
+    line-height: 18px
+}
+.support-button .support .cont span{
+    font-size: 18px;
+    color: #07294d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.support-button .button{
+    margin-left: 60px;
+}
+
+/*===== Header Menu =====*/
+
+.navigation{}
+
+.navigation.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    -webkit-animation: sticky 2s;
+    animation: sticky 2s;
+}
+
+@-webkit-keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+.navigation .navbar{
+    padding: 0;
+}
+
+.navigation .navbar .navbar-nav{}
+.navigation .navbar .navbar-nav li{
+    margin-right: 40px;
+    position: relative;
+}
+.navigation .navbar .navbar-nav li:last-child{
+    margin-right: 0;
+}
+
+.navigation .navbar .navbar-nav li a{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #07294d;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    padding: 25px 0;
+}
+
+.navigation .navbar .navbar-nav > li > a.active,
+.navigation .navbar .navbar-nav > li > a:hover{
+    color: #ffc600;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #07294d;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 99;
+}
+.navigation .navbar .navbar-nav li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li{
+    margin-right: 0;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a{
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 198, 0, 0.5);
+    color: #fff;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a.active,
+.navigation .navbar .navbar-nav li .sub-menu li a:hover{
+    padding-left: 20px;
+    color: #ffc600;
+}
+
+.sub-nav-toggler{
+    display: none;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li:last-child a{
+    border-bottom: 0;
+}
+
+.navbar .navbar-toggler {
+	padding: 3px 8px;
+	margin: 18px 0;
+     -webkit-transform: all 0.4s linear;
+    transform: all 0.4s linear;
+}
+
+.navbar .navbar-toggler .icon-bar {
+	width: 30px;
+	height: 2px;
+	background-color: #07294d;
+	display: block;
+	margin: 5px 0;
+    position: relative;
+     -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(1){
+    -webkit-transform: rotate(46deg);
+    transform: rotate(46deg);
+    top: 7px;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(2){
+    opacity: 0;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(3){
+    -webkit-transform: rotate(134deg);
+    transform: rotate(134deg);
+    top: -7px;
+}
+
+.right-icon{}
+.right-icon ul li{
+    display: inline-block;
+    margin-right: 17px;
+    padding: 22px 0;
+}
+.right-icon ul li:last-child{
+    margin-right: 0;
+}
+
+.right-icon ul li a{
+    font-size: 18px;
+    color: #07294d;
+    position: relative;
+    padding-right: 7px;
+}
+.right-icon ul li a span{
+    font-size: 12px;
+    color: #fff;
+    background-color: #ffc600;
+    border-radius: 50%;
+    padding: 0px 4px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+/*===== SEARCH BOX =====*/
+.search-form {
+    position: relative;
+  }
+  
+  .search-form input[type="text"] {
+    /* padding: 5px 10px; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .search-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* padding: 5px 10px; */
+    background-color: #ccc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+.search-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 41, 77, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.closebtn {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	cursor: pointer;
+	width: 30px;
+	height: 25px;
+}
+.closebtn span{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+.closebtn span:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 11px;
+}
+.closebtn span:nth-of-type(2){
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	top: 9px;
+}
+
+.search-box .serach-form input {
+	width: 50%;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border: 2px solid #07294d;
+	color: #07294d;
+	padding-left: 20px;
+	border-radius: 50px;
+}
+.search-box .serach-form button {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: #07294d;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+/*=====================================================
+    5. ABOUT css 
+======================================================*/
+
+#about-part{
+    position: relative;
+    padding-bottom: 220px;
+}
+.about-bg{
+    width: 52%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+.about-bg::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%);
+}
+
+.about-bg img{
+    width: 100%;
+}
+
+.about-cont p{
+    padding-top: 30px;
+}
+
+.about-event{
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    padding: 65px 70px 37px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.about-event .event-title h3{
+    font-size: 36px;
+    color: #000;
+    padding-bottom: 5px;
+}
+.about-event ul li .singel-event{
+    padding: 25px 0;
+    border-bottom: 1px solid #cecece;
+}
+.about-event ul li:last-child .singel-event{
+    border-bottom: 0;
+}
+
+.about-event ul li .singel-event span{
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-right: 20px;
+}
+.about-event ul li .singel-event span i{
+    color: #ffc600;
+    margin-right: 3px;
+}
+.about-event ul li .singel-event a{
+    display: block;
+}
+.about-event ul li .singel-event a h4{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 24px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.about-event ul li .singel-event a:hover h4{
+    color: #ffc600;
+}
+
+/*=====================================================
+     event css 
+======================================================*/
+
+#event{}
+#event .section-title{
+    position: relative;
+    z-index: 5;
+}
+#event .section-title h5,
+#event .section-title h2{
+    color: #fff;
+}
+#event .section-title h5::before{
+    background-color: #fff;
+}
+
+.event-slied{
+    position: relative;
+    z-index: 5;
+}
+.singel-event{
+    position: relative;
+}
+.singel-event .event-thum{
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.singel-event .event-thum img{
+    
+    border-radius: 5px;
+}
+.singel-event .event-thum .quote{
+    position: absolute;
+    right: -22px;
+    top: -22px;
+}
+.singel-event .event-thum .quote i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ffc600;
+    border-radius: 50%;
+    color: #07294d;
+    font-size: 18px;
+}
+.singel-event .event-cont {
+    padding: 10px 0px 40px 140px;
+}
+.singel-event .event-cont p {
+    color: #fff;
+    padding:10px 0px 10px 10px
+}
+.singel-event .event-cont h6 {
+    color: #fff;
+    padding-bottom: 4px;
+}
+.singel-event .event-cont span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.event-slied .slick-dots{
+    margin: 0 auto;
+}
+.event-slied .slick-dots li{
+    display: inline-block;
+    margin-top: 15px;
+}
+.event-slied .slick-dots li button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.event-slied .slick-dots li.slick-active button{
+    background-color: #ffc600;
+}
+/*=====================================================
+    13. FOOTER css 
+======================================================*/
+
+
+#footer1 {
+    width: 100%;
+    float: left;
+    height: auto;
+    padding: 10px 0 20px;
+    background: #fff;
+}
+#footer2 {
+    width: 1140px;
+    height: auto;
+    margin: auto;
+}
+
+#ttfootertrentrai {
+    width: 100%;
+    float: left;
+    height: auto;
+    color: #281756;
+    line-height: 2;
+}
+
+#tdttfootertrentrai {
+    width: 100%;
+    float: left;
+    height: auto;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#ttfootertrentrai p {
+    margin: 0;
+    padding: 0;
+}
+#mapfootertrentrai {
+    width: 650px;
+    float: right;
+    height: auto;
+    padding-top: 100px;
+}
+#mapfootertrentrai iframe {
+    width: 100%!important;
+    height: 209px!important;
+    float: left;
+}
+
+
+.footer-top{
+    background-color: #003369;
+}
+
+.footer-about {
+	padding-right: 50px;
+}
+.footer-about p{
+    color: #fff;
+    padding-top: 15px;
+}
+.footer-about ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-about ul li:last-child{
+    margin-right: 0;
+}
+
+.footer-about ul li a{
+    width: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #021d3a;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    
+}
+.footer-about ul li a:hover{
+    background-color: #ffc600;
+    color: #021d3a;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    
+}
+
+
+.footer-title h6{
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-copyright{
+    background-color: #002752;
+}
+.footer-copyright .copyright p{
+    color: #fff;
+    text-align: center;
+}
+.footer-copyright .copyright p span{
+    font-weight: 600;
+}
+
+
+.footer-link{
+    overflow: hidden;
+}
+.footer-link ul{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.footer-link ul li{
+    line-height: 35px;
+}
+.footer-link ul li a{
+    color: #fff;
+    font-size: 15px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.footer-link ul li a i{
+    margin-right: 8px;
+    color: #ffc600;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.footer-link ul li a:hover {
+    color: #ffc600;
+}
+.footer-link ul li a:hover i{
+    margin-right: 15px;
+}
+
+
+/*=====================================================
+    19. COUNT DOWN css 
+======================================================*/
+
+.count-down-cont{
+    position: relative;
+    z-index: 5;
+}
+.count-down-cont h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.count-down-cont h2{
+    font-size: 72px;
+    color: #ffc600;
+    font-weight: 700;
+    padding-bottom: 37px;
+}
+
+.count-down-time{
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+.count-down-time .singel-count{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 25%;
+}
+.count-down-time .singel-count .number{
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+.count-down-time .singel-count .title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+}
+
+.category-form-3{
+    margin-top: 0;
+    position: relative;
+    z-index: 5;
+}
+.category-form-3 .form-title {
+	background-color: #ffc600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.category-form-3 .form-title h3 {
+	color: #07294d;
+}
+.category-form-3 .form-title span {
+    font-weight: 600;
+}
+.category-form-3 .main-btn{
+    color: #fff;
+}
+.category-form-3 .main-btn:hover{
+    color: #ffc600;
+    border-color: #07294d;
+}
+
+
+/*=====================================================
+    20. PAGE BANNER  css 
+======================================================*/
+
+.page-banner-cont{
+    position: relative;
+    z-index: 5;
+}
+.page-banner-cont h2{
+    font-size: 52px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.page-banner-cont .breadcrumb{
+    margin: 0;
+    background: none;
+    padding: 0;
+}
+.page-banner-cont .breadcrumb .breadcrumb-item {
+	color: #ffc600;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+.page-banner-cont .breadcrumb .breadcrumb-item a{
+    color: #fff;
+}
+.page-banner-cont .breadcrumb-item + .breadcrumb-item::before {
+	color: #fff;
+	content: "/";
+    font-size: 18px;
+}
+
+
+/*=====================================================
+    21. ABOUT PAGE css 
+======================================================*/
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-singel-items{}
+.about-singel-items span{
+    font-size: 60px;
+    color: #dbdbdb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 46px;
+    padding-bottom: 22px;
+}
+.about-singel-items h4{
+    color: #000;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+
+
+/*=====================================================
+    22. COURSES PAGE css 
+======================================================*/
+
+
+
+.courses-pagination{}
+.courses-pagination .pagination{}
+.courses-pagination .pagination .page-item{
+    margin: 0 5px;
+}
+.courses-pagination .pagination .page-item a{
+    font-size: 15px;
+    color: #07294d;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.courses-pagination .pagination .page-item a.active,
+.courses-pagination .pagination .page-item a:hover{
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+.courses-pagination{}
+.courses-pagination .pagination{}
+.courses-pagination .pagination .page-item1{
+    margin: 0 5px;
+}
+.courses-pagination .pagination .page-item1 a{
+    font-size: 15px;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.courses-pagination .pagination .page-item1 a.active,
+.courses-pagination .pagination .page-item1 a:hover{
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+/*=====================================================
+    24. information PAGE css 
+======================================================*/
+
+.singel-information-list{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.singel-information-list .information-thum {
+	width: 30%;
+    text-align: center;
+}
+.singel-information-list .information-thum img{
+    width: 100%;
+    border-radius: 5px;
+}
+.singel-information-list .information-cont {
+	width: 82%;
+    padding-left: 30px;
+}
+
+.singel-information-list .information-cont span {
+	font-size: 14px;
+	color: #8a8a8a;
+	margin-right: 20px;
+}
+.singel-information-list .information-cont span i {
+	color: #ffc600;
+	margin-right: 3px;
+}
+.singel-information-list .information-cont a {
+	display: block;
+}
+.singel-information-list .information-cont a h4 {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	color: #000;
+	font-size: 20px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.singel-information-list .information-cont a:hover h4 {
+    color: #ffc600;
+}
+
+/*=====================================================
+    CONTACT PAGE css 
+======================================================*/
+
+.contact-from{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+}
+.contact-from .main-form{}
+.contact-from .main-form .singel-form{
+    margin-top: 20px;
+}
+.contact-from .main-form .singel-form input,
+.contact-from .main-form .singel-form textarea{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    color: #8a8a8a;
+    font-size: 15px;
+}
+
+.contact-from .main-form .singel-form textarea{
+    padding-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.form-group{
+    margin: 0;
+}
+.list-unstyled li {
+	font-size: 13px;
+	margin-left: 2px;
+	margin-top: 5px;
+	color: #f00;
+}
+p.form-message.success,
+p.form-message.error {
+	font-size: 16px;
+	color: #353535;
+	background: #ddd;
+	padding: 10px 15px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.contact-address{
+    background-color: #fff;
+    padding: 20px 50px 50px;
+    border-radius: 5px;
+}
+
+.contact-address ul li{
+    padding-top: 30px;
+}
+.contact-address ul li .singel-address{
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-address ul li .singel-address .icon i{
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #07294d;
+    color: #07294d;
+    font-size: 24px;
+    text-align: center;
+}
+.contact-address ul li .singel-address .cont{
+    padding-left: 20px;
+}
+.contact-address ul li .singel-address .cont p{}
+
+.map{}
+.map #contact-map{
+    width: 100%;
+    height: 225px;
+}
+
+.map.map-big #contact-map{
+    width: 100%;
+    height: 415px;
+}
+.contact-address .contact-heading{
+	padding-top: 35px;
+}
+
+.contact-address .contact-heading h5{
+	padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
